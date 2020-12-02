@@ -25,7 +25,8 @@ namespace voteapp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-           // GetWindow();
+            //GetWindow().Show();
+
         }
     }
 }

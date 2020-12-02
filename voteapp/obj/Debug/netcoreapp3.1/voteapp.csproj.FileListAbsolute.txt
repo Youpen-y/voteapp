@@ -35,3 +35,4 @@ C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window2.g.c
 C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window2.baml
 C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window3.g.cs
 C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window3.baml
+C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs

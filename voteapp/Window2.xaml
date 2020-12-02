@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:voteapp"
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
-    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+    <Grid x:Name="menuWin" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="99*"/>
-            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="投票管理系统" HorizontalAlignment="Left" Margin="325,25,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="22"/>
+        <Label Content="投票管理系统" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Height="40" Width="150" FontSize="22"/>
         <Button x:Name="gotovote" Content="参与投票" HorizontalAlignment="Left" Height="50" Margin="320,95,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click" FontSize="20">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -20,7 +20,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="发起投票" HorizontalAlignment="Left" Height="50" Margin="320,170,0,0" VerticalAlignment="Top" Width="156" FontSize="20">
+        <Button x:Name="delivervote" Content="发起投票" HorizontalAlignment="Left" Height="50" Margin="320,170,0,0" VerticalAlignment="Top" Width="156" FontSize="20">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF7ED9B6"/>
@@ -37,6 +37,8 @@
             </Button.Background>
         </Button>
         <Button x:Name="logout" Content="退出登陆" HorizontalAlignment="Left" Height="50" Margin="320,320,0,0" VerticalAlignment="Top" Width="156" FontSize="20" Click="logout_Click"/>
+        <Label Content="欢迎您：" HorizontalAlignment="Left" Margin="535,65,0,0" VerticalAlignment="Top" Height="25" Width="50"/>
+        <Label x:Name="username_2" Content="Label" HorizontalAlignment="Left" Margin="600,65,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
