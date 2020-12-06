@@ -20,11 +20,22 @@ namespace voteapp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static string useraccount;
-        public static string userpassword;
-        public MainWindow()
+        string useraccount;
+        string userpassword;
+        string username;
+        string usertext;
+        
+        public MainWindow(string account, string password, string name, string text)
         {
+            useraccount = account;
+            userpassword = password;
+            username = name;
+            usertext = text;
             InitializeComponent();
+        }
+        public MainWindow() 
+        {
+            InitializeComponent();    
         }
         //Connect to the mysql database
            
@@ -63,7 +74,7 @@ namespace voteapp
                     if(Convert.ToInt32(comm.ExecuteScalar()) > 0)
                     {
                         MessageBox.Show("登陆成功！");
-                        Window2 window2 = new Window2(useraccount,userpassword);
+                        Window2 window2 = new Window2(useraccount,userpassword,username, usertext);
                         window2.Owner = this;
                         window2.Show();
                         //跳转至主页面

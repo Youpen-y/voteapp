@@ -16,15 +16,15 @@ namespace voteapp
     /// <summary>
     /// Window1.xaml 的交互逻辑
     /// </summary>
+    /// 
     public partial class Window1 : Window
     {
 
         string registeraccount;
         string registerpassword;
         string registercheck;
-        string registername ;
+        string registername;
         string registertext;
-
         public Window1()
         {
             InitializeComponent();
@@ -95,7 +95,7 @@ namespace voteapp
         }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         { 
-            MainWindow mainWindow = new MainWindow();
+            MainWindow mainWindow = new MainWindow(registeraccount,registerpassword,registername,registertext);
             mainWindow.Show();
             this.Hide();
         }

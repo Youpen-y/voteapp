@@ -8,18 +8,11 @@
         Title="Window3" Height="450" Width="800">
     <Grid x:Name="personcenterWin" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
         <Label Content="个人中心" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" FontSize="18" Height="40" Width="90"/>
-        <Label Content="Welcome :" HorizontalAlignment="Left" Margin="480,65,0,0" VerticalAlignment="Top" Height="30" Width="75" RenderTransformOrigin="0.133,-0.008"/>
+        <Label Content="Hey!" HorizontalAlignment="Left" Margin="530,22,0,0" VerticalAlignment="Top" Height="53" Width="70" RenderTransformOrigin="0.133,-0.008" FontSize="25" FontFamily="Algerian" FontStyle="Italic"/>
         <Button x:Name="return_1" Content="返回" HorizontalAlignment="Left" Margin="40,25,0,0" VerticalAlignment="Top" Height="50" Width="95" FontSize="18" Background="#FFEDECEC" Padding="-1,1,1,1" SnapsToDevicePixels="True" Click="Button_Click"/>
-        <ListView x:Name="username_3" Margin="575,65,130,340" FontSize="18">
-            <ListView.DataContext>
-                <local:MainWindow FontSize="18"/>
-            </ListView.DataContext>
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <Label x:Name="centername" Content="Label" HorizontalAlignment="Left" Margin="615,24,0,0" VerticalAlignment="Top" Height="52" Width="100" FontSize="25" FontFamily="Algerian" FontStyle="Italic" FontWeight="Normal"/>
+        <Label Content="Account:" HorizontalAlignment="Left" Margin="545,124,0,0" VerticalAlignment="Top" Height="36" Width="90" FontSize="18" RenderTransformOrigin="0.429,1.966" FontWeight="Normal" FontStyle="Italic"/>
+        <Label x:Name="centeraccount" Content="Label" HorizontalAlignment="Left" Margin="640,124,0,0" VerticalAlignment="Top" Height="36" Width="75" FontSize="18"/>
 
     </Grid>
 </Window>

@@ -17,9 +17,17 @@ namespace voteapp
     /// </summary>
     public partial class Window2 : Window
     {
-        public Window2(string account, string password)
+        string useraccount;
+        string userpassword;
+        string username;
+        string usertext;
+        public Window2(string account, string password, string name, string text)
         {
             InitializeComponent();
+            useraccount = account;
+            userpassword = password;
+            username = name;
+            usertext = text;
             username_2.Content = account;
         }
         private void Window2_Load(object sender, EventArgs e)
@@ -40,7 +48,7 @@ namespace voteapp
 
         private void personcenter_Click(object sender, RoutedEventArgs e)
         {
-            Window3 window3 = new Window3();
+            Window3 window3 = new Window3(useraccount, userpassword, username, usertext);
             window3.Show();
             this.Hide();
         }

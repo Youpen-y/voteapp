@@ -17,16 +17,27 @@ namespace voteapp
     /// </summary>
     public partial class Window3 : Window
     {
-        public Window3()
+        string useraccount;
+        string userpassword;
+        string username;
+        string usertext;
+        public Window3(string account, string password, string name, string text)
         {
             InitializeComponent();
+            useraccount = account;
+            userpassword = password;
+            username = name;
+            usertext = text;
+            centeraccount.Content = account;
+            centername.Content = name;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Window2 window2 = new Window2(useraccount, userpassword, username, usertext);
             this.Hide();
+            window2.Show();
             //GetWindow().Show();
-
         }
     }
 }
