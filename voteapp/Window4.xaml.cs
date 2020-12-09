@@ -58,7 +58,7 @@ namespace voteapp
 
             Random random = new Random();
             themeID = random.Next(1, 10000);
-            string strInsertSql = "insert into theme_table (themeID,themeTitle,Initiator) values ('"+themeID+"','" + votetheme + "','" + useraccount + "')";
+            string strInsertSql = "insert into theme_table (themeID,themeTitle,initiator) values ('"+themeID+"','" + votetheme + "','" + useraccount + "')";
             string strInsertSqlA = "insert into item_table (TopicID,itemContent,itemChoice) values ('" + themeID + "', '" + itemA + "',0)";
             string strInsertSqlB = "insert into item_table (TopicID,itemContent,itemChoice) values ('" + themeID + "', '" + itemB + "',0)";
             string strInsertSqlC = "insert into item_table (TopicID,itemContent,itemChoice) values ('" + themeID + "', '" + itemC + "',0)";
