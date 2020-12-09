@@ -19,7 +19,7 @@
         <Label Content="选择主题编号：" HorizontalAlignment="Left" Height="40" Margin="10,345,0,0" VerticalAlignment="Top" Width="135" FontSize="18" Grid.Column="1"/>
         <Button Content="前去投票" HorizontalAlignment="Left" Height="40" Margin="285,345,0,0" VerticalAlignment="Top" Width="110" FontSize="18" Background="#FFF3F9F7" BorderThickness="3,2,3,2" Grid.Column="1" Click="Button_Click"/>
         <Button x:Name="refreshButton" Content="更新" HorizontalAlignment="Left" Margin="308,51,0,0" VerticalAlignment="Top" Height="32" Width="62" FontSize="18" Click="refreshButton_Click" BorderThickness="3,2,3,2" Grid.Column="1" Cursor="Arrow" RenderTransformOrigin="0.538,1.368" Background="#FFF0F0F0"/>
-        <DataGrid x:Name="dataView" HorizontalAlignment="Left" Height="252" Margin="38,88,0,0" VerticalAlignment="Top" Width="332" Grid.Column="1"/>
+        <DataGrid x:Name="dataView" HorizontalAlignment="Left" Height="252" Margin="38,88,0,0" VerticalAlignment="Top" Width="322" Grid.Column="1"/>
         <Button Content="返回" HorizontalAlignment="Center" Height="45" VerticalAlignment="Top" Width="75" FontSize="16" Click="Button_Click_1" Margin="0,45,0,0" Padding="0,0,0,0" BorderThickness="3,2,3,2"/>
 
 

@@ -24,7 +24,7 @@ namespace voteapp
         string username;
         string usertext;
         String connetStr;
-        int themeID;
+        
         public Window5(string account, string password, string name, string text)
         {
             InitializeComponent();
@@ -52,7 +52,6 @@ namespace voteapp
             ad.Fill(ds,"Theme");
             dt = ds.Tables["Theme"];
             dataView.ItemsSource = dt.DefaultView;
-            
             conn.Close();
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -64,6 +63,9 @@ namespace voteapp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            int themeID;
+            string themeContent;
+            string user;
             if (this.getThemeID.Text == null)
             {
                 MessageBox.Show("Please input the ThemeID");
@@ -74,14 +76,21 @@ namespace voteapp
                 MySqlConnection conn = ConnectDatabase();
                 conn.Open();
                 string strSql = "select count(*) from theme_table where themeID = '"+ themeID +" '";
+                string strSqlone = "select * from theme_table where themeID = '" + themeID + "'";
                 MySqlCommand comm = new MySqlCommand(strSql, conn);
+                MySqlCommand comm1 = new MySqlCommand(strSqlone, conn);
+                MySqlDataAdapter ad = new MySqlDataAdapter(comm1);
+                DataSet ds = new DataSet();
+                ad.Fill(ds);
+                themeContent = ds.Tables[0].Rows[0][1].ToString();
+                user = ds.Tables[0].Rows[0][2].ToString();
                 if (Convert.ToInt32(comm.ExecuteScalar()) <= 0)
                 {
                     MessageBox.Show("无相应主题，请重新输入");
                 }
                 else
                 {
-                    Window6 window6 = new Window6(themeID);
+                    Window6 window6 = new Window6(themeID, themeContent, user);
                     window6.Show();
                 }
             }

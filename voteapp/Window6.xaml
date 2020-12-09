@@ -6,5 +6,19 @@
         xmlns:local="clr-namespace:voteapp"
         mc:Ignorable="d"
         Title="Window6" Height="324" Width="429" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
-    <Button Content="Button" HorizontalAlignment="Left" Height="105" Margin="165,85,0,0" VerticalAlignment="Top" Width="90"/>
+    <Grid x:Name="voterGrid" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Width="430" Height="300">
+        <Button x:Name="choiceFirst" Content="A" HorizontalAlignment="Left" Height="50" Margin="30,232,0,0" VerticalAlignment="Top" Width="70" Click="choiceFirst_Click"/>
+        <Button x:Name="choiceSecond" Content="B" HorizontalAlignment="Left" Height="50" Margin="130,232,0,0" VerticalAlignment="Top" Width="70" Click="choiceSecond_Click"/>
+        <Button x:Name="choiceThird" Content="C" HorizontalAlignment="Left" Height="50" Margin="230,232,0,0" VerticalAlignment="Top" Width="70" Click="choiceThird_Click"/>
+        <Button x:Name="choiceFourth" Content="D" HorizontalAlignment="Left" Height="50" Margin="330,232,0,0" VerticalAlignment="Top" Width="70" Click="choiceFourth_Click"/>
+        <Label x:Name="themeName" Content="" HorizontalAlignment="Left" Height="25" Margin="85,10,0,0" VerticalAlignment="Top" Width="245"/>
+        <Label Content="A" HorizontalAlignment="Left" Height="25" Margin="100,50,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label x:Name="LabelA" Content="Label" HorizontalAlignment="Left" Height="25" Margin="155,50,0,0" VerticalAlignment="Top" Width="185"/>
+        <Label Content="B" HorizontalAlignment="Left" Height="30" Margin="100,90,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label x:Name="LabelB" Content="Label" HorizontalAlignment="Left" Height="30" Margin="155,90,0,0" VerticalAlignment="Top" Width="175"/>
+        <Label Content="C" HorizontalAlignment="Left" Height="30" Margin="100,0,0,0" VerticalAlignment="Center" Width="35"/>
+        <Label x:Name="LabelC" Content="Label" HorizontalAlignment="Left" Height="30" Margin="155,0,0,0" VerticalAlignment="Center" Width="185"/>
+        <Label Content="D" HorizontalAlignment="Left" Height="25" Margin="100,180,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label x:Name="LabelD" Content="Label" HorizontalAlignment="Left" Height="25" Margin="155,180,0,0" VerticalAlignment="Top" Width="185"/>
+    </Grid>
 </Window>
