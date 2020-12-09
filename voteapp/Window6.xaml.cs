@@ -70,7 +70,7 @@ namespace voteapp
             choiceA++;
             MySqlConnection conn = ConnectDatabase();
             conn.Open();
-           string strSql = "update item_table set itemChoice = '"+choiceA+"' where itemContent = '" + itemContentA + "'and TopicID = '"+ themeID+"'";
+           string strSql = "update item_table set itemChoice = '"+choiceA.ToString()+"' where itemContent = '" + itemContentA + "'and TopicID = '"+ themeID.ToString()+"'";
             MySqlCommand comm = new MySqlCommand(strSql, conn);
             if (comm.ExecuteNonQuery() > 0)
             {
@@ -89,7 +89,7 @@ namespace voteapp
             choiceB++;
             MySqlConnection conn = ConnectDatabase();
             conn.Open();
-            string strSql = "update item_table set itemChoice = '" + choiceB + "' where itemContent = '" + itemContentB + "' and TopicID = '"+themeID+"'";
+            string strSql = "update item_table set itemChoice = '" + choiceB + "' where itemContent = '" + itemContentB + "' and TopicID = '"+themeID.ToString()+"'";
             MySqlCommand comm = new MySqlCommand(strSql, conn);
             if (comm.ExecuteNonQuery() > 0)
             {
@@ -108,7 +108,7 @@ namespace voteapp
             choiceC++;
             MySqlConnection conn = ConnectDatabase();
             conn.Open();
-            string strSql = "update item_table set itemChoice = '" + choiceC + "' where itemContent = '" + itemContentC + "' and TopicID = '" + themeID + "'";
+            string strSql = "update item_table set itemChoice = '" + choiceC + "' where itemContent = '" + itemContentC + "' and TopicID = '" + themeID.ToString() + "'";
             MySqlCommand comm = new MySqlCommand(strSql, conn);
             if (comm.ExecuteNonQuery() > 0)
             {
@@ -127,7 +127,7 @@ namespace voteapp
             choiceD++;
             MySqlConnection conn = ConnectDatabase();
             conn.Open();
-            string strSql = "update item_table set itemChoice = '" + choiceD + "' where itemContent = '" + itemContentD + "' and TopicID = '" + themeID + "'";
+            string strSql = "update item_table set itemChoice = '" + choiceD + "' where itemContent = '" + itemContentD + "' and TopicID = '" + themeID.ToString() + "'";
             MySqlCommand comm = new MySqlCommand(strSql, conn);
             if (comm.ExecuteNonQuery() > 0)
             {

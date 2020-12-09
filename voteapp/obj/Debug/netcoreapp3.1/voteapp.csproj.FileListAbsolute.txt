@@ -41,3 +41,5 @@ C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window5.g.c
 C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window5.baml
 C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window6.g.cs
 C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window6.baml
+C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window7.g.cs
+C:\Users\Youpen\source\repos\voteapp\voteapp\obj\Debug\netcoreapp3.1\Window7.baml

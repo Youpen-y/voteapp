@@ -19,15 +19,11 @@ namespace voteapp
     {
         string useraccount;
         string userpassword;
-        string username;
-        string usertext;
-        public Window2(string account, string password, string name, string text)
+        public Window2(string account, string password)
         {
             InitializeComponent();
             useraccount = account;
             userpassword = password;
-            username = name;
-            usertext = text;
             username_2.Content = account;
         }
         private void Window2_Load(object sender, EventArgs e)
@@ -45,7 +41,7 @@ namespace voteapp
 
         private void personcenter_Click(object sender, RoutedEventArgs e)
         {
-            Window3 window3 = new Window3(useraccount, userpassword, username, usertext);
+            Window3 window3 = new Window3(useraccount, userpassword);
             window3.Show();
             this.Hide();
         }
@@ -53,14 +49,14 @@ namespace voteapp
         private void delivervote_Click_1(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Window4 window4 = new Window4(useraccount,userpassword,username,usertext);
+            Window4 window4 = new Window4(useraccount,userpassword);
             window4.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Window5 window5 = new Window5(useraccount,userpassword,username,usertext);
+            Window5 window5 = new Window5(useraccount,userpassword);
             window5.Show();
         }
     }

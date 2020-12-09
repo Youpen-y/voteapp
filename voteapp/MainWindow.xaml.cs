@@ -74,7 +74,7 @@ namespace voteapp
                     if(Convert.ToInt32(comm.ExecuteScalar()) > 0)
                     {
                         MessageBox.Show("登陆成功！");
-                        Window2 window2 = new Window2(useraccount,userpassword,username, usertext);
+                        Window2 window2 = new Window2(useraccount,userpassword);
                         window2.Owner = this;
                         window2.Show();
                         //跳转至主页面

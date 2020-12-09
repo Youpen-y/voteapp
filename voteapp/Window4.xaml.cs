@@ -20,8 +20,6 @@ namespace voteapp
     {
         string useraccount;
         string userpassword;
-        string username;
-        string usertext;
         string votetheme;
         string itemA;
         string itemB;
@@ -30,13 +28,11 @@ namespace voteapp
         int themeID;
         String connetStr = "server=127.0.0.1;port=3306;user=root;password=yyp5689;database=vote;";
         MySqlConnection conn;
-        public Window4(string account, string password, string name, string text)
+        public Window4(string account, string password)
         {
             InitializeComponent();
             useraccount = account;
             userpassword = password;
-            username = name;
-            usertext = text;
             conn = new MySqlConnection(connetStr);
             conn.Open();
         }
@@ -44,7 +40,7 @@ namespace voteapp
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Window2 window2 = new Window2(useraccount,userpassword,username,usertext);
+            Window2 window2 = new Window2(useraccount,userpassword);
             window2.Show();
         }
 

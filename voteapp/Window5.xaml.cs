@@ -21,17 +21,14 @@ namespace voteapp
     {
         string useraccount;
         string userpassword;
-        string username;
-        string usertext;
         String connetStr;
         
-        public Window5(string account, string password, string name, string text)
+        public Window5(string account, string password)
         {
             InitializeComponent();
             useraccount = account;
             userpassword = password;
-            username = name;
-            usertext = text;
+
             
         }
         private MySqlConnection ConnectDatabase() 
@@ -57,7 +54,7 @@ namespace voteapp
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Window2 window2 = new Window2(useraccount,userpassword,username,usertext);
+            Window2 window2 = new Window2(useraccount,userpassword);
             window2.Show();
         }
 

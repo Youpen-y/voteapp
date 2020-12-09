@@ -7,12 +7,21 @@
         mc:Ignorable="d"
         Title="Window3" Height="450" Width="800">
     <Grid x:Name="personcenterWin" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
-        <Label Content="个人中心" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" FontSize="18" Height="40" Width="90"/>
-        <Label Content="Hey!" HorizontalAlignment="Left" Margin="530,22,0,0" VerticalAlignment="Top" Height="53" Width="70" RenderTransformOrigin="0.133,-0.008" FontSize="25" FontFamily="Algerian" FontStyle="Italic"/>
-        <Button x:Name="return_1" Content="返回" HorizontalAlignment="Left" Margin="40,25,0,0" VerticalAlignment="Top" Height="45" Width="75" FontSize="16" Background="#FFEDECEC" Padding="-1,1,1,1" SnapsToDevicePixels="True" Click="Button_Click" BorderThickness="5,3,5,3"/>
-        <Label x:Name="centername" Content="Label" HorizontalAlignment="Left" Margin="615,24,0,0" VerticalAlignment="Top" Height="52" Width="175" FontSize="25" FontFamily="Algerian" FontStyle="Italic" FontWeight="Normal"/>
-        <Label Content="Account:" HorizontalAlignment="Left" Margin="545,124,0,0" VerticalAlignment="Top" Height="36" Width="90" FontSize="18" RenderTransformOrigin="0.429,1.966" FontWeight="Normal" FontStyle="Italic"/>
-        <Label x:Name="centeraccount" Content="Label" HorizontalAlignment="Left" Margin="640,124,0,0" VerticalAlignment="Top" Height="36" Width="75" FontSize="18"/>
+        <Label Content="Hey!" HorizontalAlignment="Left" Margin="300,10,0,0" VerticalAlignment="Top" Height="53" Width="70" RenderTransformOrigin="0.133,-0.008" FontSize="25" FontFamily="Algerian" FontStyle="Italic"/>
+        <Button x:Name="return_1" Content="返回" HorizontalAlignment="Left" Margin="35,25,0,0" VerticalAlignment="Top" Height="45" Width="75" FontSize="16" Background="#FFEDECEC" Padding="-1,1,1,1" SnapsToDevicePixels="True" Click="Button_Click" BorderThickness="5,3,5,3"/>
+        <Label x:Name="centername" Content="Label" HorizontalAlignment="Left" Margin="400,10,0,0" VerticalAlignment="Top" Height="52" Width="175" FontSize="25" FontFamily="Algerian" FontStyle="Italic" FontWeight="Normal"/>
+        <Label Content="帐号:" HorizontalAlignment="Left" Margin="595,122,0,0" VerticalAlignment="Top" Height="35" Width="60" FontSize="18" RenderTransformOrigin="0.429,1.966" FontWeight="Normal" FontStyle="Normal"/>
+        <Label x:Name="centeraccount" Content="Label" HorizontalAlignment="Left" Margin="655,124,0,0" VerticalAlignment="Top" Height="36" Width="135" FontSize="16"/>
+        <Label Content="全部问题" HorizontalAlignment="Left" Height="28" Margin="185,68,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
+        <DataGrid x:Name="centertheme" HorizontalAlignment="Left" Height="204" Margin="185,101,0,0" VerticalAlignment="Top" Width="318"/>
+        <Label Content="输入编号：" HorizontalAlignment="Left" Height="32" Margin="185,328,0,0" VerticalAlignment="Top" Width="80" FontSize="16" RenderTransformOrigin="0.556,0.96"/>
+        <Image x:Name="userimage" HorizontalAlignment="Left" Height="83" Margin="640,24,0,0" VerticalAlignment="Top" Width="140" Source="image/trump.jpg"/>
+        <Label Content="昵称:" HorizontalAlignment="Left" Height="35" Margin="595,170,0,0" VerticalAlignment="Top" Width="60" FontSize="18"/>
+        <Label Content="个性签名" HorizontalAlignment="Left" Height="33" Margin="629,215,0,0" VerticalAlignment="Top" Width="94" FontSize="18"/>
+        <Label x:Name="centername1" Content="Label" HorizontalAlignment="Left" Height="36" Margin="655,170,0,0" VerticalAlignment="Top" Width="135" FontSize="16"/>
+        <TextBox x:Name="InputID" HorizontalAlignment="Left" Height="24" Margin="270,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" FontSize="16"/>
+        <Button Content="查看结果" HorizontalAlignment="Left" Height="36" Margin="400,326,0,0" VerticalAlignment="Top" Width="103" FontSize="16" Background="#FFF6F6F6" Click="Button_Click_1"/>
+        <TextBlock x:Name="centertext" HorizontalAlignment="Left" Height="160" Margin="595,250,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" FontSize="18" FontFamily="Palace Script MT"/>
 
     </Grid>
 </Window>
