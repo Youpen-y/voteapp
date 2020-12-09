@@ -20,7 +20,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="delivervote" Content="发起投票" HorizontalAlignment="Left" Height="50" Margin="320,170,0,0" VerticalAlignment="Top" Width="156" FontSize="20">
+        <Button x:Name="delivervote" Content="发起投票" HorizontalAlignment="Left" Height="50" Margin="320,170,0,0" VerticalAlignment="Top" Width="156" FontSize="20" Click="delivervote_Click_1">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF7ED9B6"/>

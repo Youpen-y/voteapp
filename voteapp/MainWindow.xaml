@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:voteapp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="mainwindow" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" OpacityMask="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+    <Grid x:Name="mainwindow" OpacityMask="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
         <Label x:Name="appname" Content="投票管理系统" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Height="80" Width="230" FontSize="36" RenderTransformOrigin="0.5,0.997" FontFamily="Microsoft JhengHei" UseLayoutRounding="True"/>
         <Label x:Name="ulabel" Content="用户名" HorizontalAlignment="Left" Margin="255,179,0,0" VerticalAlignment="Top" Height="30" Width="90" FontSize="18" RenderTransformOrigin="0.444,2.992"/>
         <Label x:Name="plabel" Content="   密码&#xA;" HorizontalAlignment="Left" Margin="255,217,0,0" VerticalAlignment="Top" Height="30" Width="90" FontSize="18"/>
@@ -14,5 +14,8 @@
         <Button x:Name="loginButton" Content="登陆" HorizontalAlignment="Left" Margin="300,280,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.816,-1.312" Height="35" Width="90" Click="loginButton_Click" FontSize="16"/>
         <Button x:Name="registerButton" Content="注册" HorizontalAlignment="Left" Margin="420,280,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.816,-1.312" Height="35" Width="90" FontSize="16" Click="registerButton_Click"/>
         <PasswordBox x:Name="pText" HorizontalAlignment="Left" Height="28" Margin="350,225,310,0" VerticalAlignment="Top" Width="140" FontSize="16"/>
+        <Grid Margin="555,70,130,259" Width="120" Height="120">
+            <Image HorizontalAlignment="Center" Height="120" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.083,-0.669" Margin="0,-6,0,0" Source="image/logo.jpg"/>
+        </Grid>
     </Grid>
 </Window>

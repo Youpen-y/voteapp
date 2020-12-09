@@ -35,10 +35,7 @@ namespace voteapp
             //MainWindow mainWindow = (MainWindow)this.Owner;
             //MessageBox.Show("Welcome " + mainWindow.useraccount);
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
         private void logout_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
@@ -53,9 +50,18 @@ namespace voteapp
             this.Hide();
         }
 
-        private void delivervote_Click(object sender, RoutedEventArgs e)
+        private void delivervote_Click_1(object sender, RoutedEventArgs e)
         {
+            this.Hide();
+            Window4 window4 = new Window4(useraccount,userpassword,username,usertext);
+            window4.Show();
+        }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Window5 window5 = new Window5(useraccount,userpassword,username,usertext);
+            window5.Show();
         }
     }
 }

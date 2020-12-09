@@ -31,7 +31,10 @@ namespace voteapp
             centeraccount.Content = account;
             centername.Content = name;
         }
+        public Window3(string account, string password)
+        {
 
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Window2 window2 = new Window2(useraccount, userpassword, username, usertext);
